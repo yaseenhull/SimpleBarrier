@@ -1,3 +1,7 @@
+// Simple Barrier Assignment
+// Yaseen Hull
+// April 2019 
+
 //package BarrierS;
 import java.util.concurrent.Semaphore;
 
