@@ -19,12 +19,12 @@ public class Barrier {
 	
 	public void b_wait() throws InterruptedException{
 		// this is the only additional method you will need to complete
-		mutex.acquire();
+		mutex.acquire(); //provide mutual exclusion when accessing count variable
 			count++;
 		mutex.release();
 		
 		if(count ==n){
-			barrier.release();
+			barrier.release(); // signal threads to proceed to critical point
 		}
 		
 		barrier.acquire();
